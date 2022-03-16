@@ -4,6 +4,7 @@ v4.3.0 ([month] 2022)
   - Upgraded gems:
     - nokogiri, rails
   - Bugs fixes:
+    - Issues: Fixes incorret links in the "Send To" menu
     - [entity]:
       - [future tense verb] [bug fix]
     - Bug tracker items:
