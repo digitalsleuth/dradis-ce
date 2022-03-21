@@ -1,7 +1,7 @@
 FROM ruby:2.7.2-slim
 
 LABEL maintainer="digitalsleuth"
-LABEL version="1.1"
+LABEL version="1.2"
 LABEL description="Docker for dradis-ce"
 
 RUN apt-get update && \
@@ -13,7 +13,7 @@ WORKDIR /dradis-ce
 
 RUN /usr/local/bin/bundle install && \
 /usr/local/bin/ruby /dradis-ce/bin/setup && \
-DEBIAN_FRONTEND=noninteractive apt-get remove -y build-essential git --purge
+DEBIAN_FRONTEND=noninteractive apt-get remove -y build-essential --purge
 
 EXPOSE 8080
 CMD /usr/local/bin/bundle exec rails server -p $BIND_PORT -b $BIND_IP
