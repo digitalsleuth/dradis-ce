@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dradis-ce:
+    hostname: dradis
+    image: digitalsleuth/dradis-ce-docker:latest
+    container_name: dradis
+    environment:
+      BIND_IP: 0.0.0.0
+      BIND_PORT: 8080
+    ports:
+      - "8080:8080"
