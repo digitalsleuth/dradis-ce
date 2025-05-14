@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.1.4.7'
+gem 'rails', '~> 7.0.0.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # ---------------------------------------------------- Dradis Community Edition
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap', '~> 4.6.2', '>= 4.6.2.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-fileupload-rails', '~> 0.3.4'
@@ -110,10 +110,10 @@ gem 'pg'
 gem 'cancancan', '~> 1.10'
 
 # Redis-based background worker
-gem 'resque', require: 'resque/status_server'
+gem 'resque', '>= 2.2.1', require: 'resque/status_server'
 gem 'resque-status'
 # See https://github.com/sinatra/sinatra/issues/1055
-gem 'sinatra', '2.0.2'
+gem 'sinatra', '4.0.0'
 
 # Forms that integrate with Twitter's Bootstrap
 gem 'simple_form'
