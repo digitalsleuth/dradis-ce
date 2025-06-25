@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.1.4.7'
+gem 'rails', '~> 7.0.0.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # ---------------------------------------------------- Dradis Community Edition
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap', '~> 4.6.2', '>= 4.6.2.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-fileupload-rails', '~> 0.3.4'
@@ -51,7 +51,7 @@ gem 'differ', '~> 0.1.2'
 
 
 # HTML processing filters and utilities
-gem 'html-pipeline'
+gem 'html-pipeline', '>= 3.0.0'
 gem 'liquid'
 
 gem 'kaminari', '~> 1.2.1'
@@ -99,7 +99,7 @@ gem 'RedCloth', '~> 4.3.2', require: 'redcloth'
 gem 'rinku'
 
 # html-pipeline dependency for html sanitization
-gem 'sanitize', '5.2.1'
+gem 'sanitize', '6.0.0'
 
 # SQLite3 DB driver
 gem 'sqlite3'
